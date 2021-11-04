@@ -261,7 +261,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 @-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
 @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .w3-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
-.w3-opacity,.w3-hover-opacity:hover{opacity:0.60;-webkit-backface-visibility:hidden}
+.w3-opacity,.w3-hover-opacity:hover{opacity:1;-webkit-backface-visibility:hidden}
 .w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1;-webkit-backface-visibility:hidden}
 .w3-opacity-max{opacity:0.25;-webkit-backface-visibility:hidden}
 .w3-opacity-min{opacity:0.75;-webkit-backface-visibility:hidden}
