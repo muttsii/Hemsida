@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href=stil.css>
 <body>
 
     <!-- Navigationsverktyg 
@@ -18,7 +19,7 @@
   </nav>
 -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html">Agila utvecklingsmetoder och html</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,41 +42,84 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Projektmetodik.html">Projektmetodik</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="Tillgänglighet.html">Tillgänglighet</a>
+          <a class="dropdown-item" href="Tillganglighet.html">Tillgänglighet</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Analys.html">Analys</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Internet.html">Internet</a>  
-        </div>
+        </div>   
       </li>
     </ul>
   </div>
 </nav>
-
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">Klienttekniker</h2>
-  <p class="w3-opacity"><i>Här komemr ajg skriva lite info
-  </i></p>
-</section>
+<main class="header-img-klient"></main>
 <section class="w3-container w3-center w3-content" style="max-width:600px" id="html">
   <h2 class="w3-wide">Klienttekniker</h2>
-  <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
-<section class="w3-container w3-center w3-content" style="max-width:600px" id="html">
-  <h2 class="w3-wide">HTML</h2>
-  <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
-</section>
-  <section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">CSS</h2>
-  <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
-</section>
-  <section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">JavaScript</h2>
-  <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
-</section>
+  <p class="w3-opacity"><i>Nedan kan du läsa om olika klienttekniker som används vid utveckling utav hemsidor.</i></p>
+
+<!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#00800082;">HTML</div>
+  <div class="column" onclick="openTab('b2');" style="background:rgba(0, 0, 255, 0.469);">CSS</div>
+  <div class="column" onclick="openTab('b3');" style="background:rgba(255, 0, 0, 0.401);">JavaScript</div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab b1" >
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+  <h3>HTML</h2>
+  <p>HyperText Markup Language eller HTML en av webbens grundstenar som tillsammans med Cascading Style Sheets och Javascript. </p>
+  <p>
+    HTML ger strukturen för alla hemsidor som finns på internet. Den står för hur rubriker och stycken delas upp, för att skilja på innehåll och bifoga bilder. 
+    Språket är egentligen inte ett programmeringsspråk utan ett märkspråk som har i uppgift att enbart bidra med struktur. Avsaknaden av att inte kunna utföra kommandon bidrar till denna definition.
+  </p>
+  <p>
+    Användningen utav HTML är allt från att särskilja på rubriker, funktionaliteter som knappar och bilder. Allt detta måste märkas ut för att sedan definieras i antingen CSS eller Javascript.
+Sökmotorer använder också strukturen för att söka efter relaterbara ord som måste bemärkas i HTML.
+  </p>
+<p>
+  Ett enkelt sätt att dela upp sin hemsida är att använda sig först utav rubriker och paragrafer.
+  För att sedan kunna dela upp informationen kan man använda sig utav <q>div</q> som är en tagg för att tilldela ett eller flera stycken en egen sektion.
+  Anledningen till detta är för att man själv vill få bättre struktur alternativt för att ge vissa delar utav hemsidan en specifik design.
+</p>
+</div>
+
+<div id="b2" class="containerTab b2" >
+  <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+  <h3>CSS</h2>
+  <p>Cascading Style Sheets är den andra grundstenen till en webbplats. Via CSS sköter man designval utav en hemsida och kan ses som ansiktet utåt. 
+    Med hjälp utav CSS man ändra bland annat ändra typsnitt, tillsätta färger och former samt infoga animeringar.</p>
+    <p>
+      CSS kan även ge uttryck åt hur hemsidan skall agera ifall man för musen över innehåll i texten, bilder eller knappar.
+    </p>
+    <p>
+      Man kan direkt i ett HTML dokument ändra utseende och ge egenskaper åt former och bilder med hjälp utav <q>Style</q> taggen. 
+      Detta är dock inget att rekommendera då HTML-koden kan ha en tendens att se stökig ut och svår att underhålla ifall man vill ändra på större delar utav en hemsida.
+      Istället kan man bruka CSS koden i ett separat dokument för att sedan hänvisa dit från HTML dokumentet och på så vis kunna specificera var och vad man vill ge ett stycke eller sektion för design.
+    </p>
+    <p>
+      Det finns flertalet lösningar på hur objekt skall placeras som till exempel ”flexbox” och ”grid” vilka är verktyg som underlättat för positionering.
+    </p>
+</div>
+
+<div id="b3" class="containerTab b3" >
+  <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+  <h3>JavaScript</h2>
+  <p>
+    Javascript bidrar till funktionaliteten på hemsidor. Enklare animationer kan man utföra med hjälp utav CSS men oftast används javascript när något händer på en hemsida. 
+    Exempel på detta kan vara när man skall fylla i formulär eller klicka på knappar som ger gensvar. Svaren kan vara felmeddelanden eller att någonting rör sig på hemsidan.
+  </p>
+  <p>
+    Många tror att Java och Javascript är samma sak men detta stämmer inte, båda må vara programmeringsspråk men de skiljer sig ifrån varandra i hur de används.
+  </p>
+  <p>
+    Vanligaste användningsområdet för javascript är att bestämma vad som skall ske när en användare interagerar med en webbplats. Via HTML anropas loopar eller if-satser för att utföra uppgifter på hemsidan. 
+    Ett annat vanligt användningsområde är <q>eventlyssnare</q> som lyssnar efter vad användare gör på en hemsida så som att skrolla, röra musen eller interaktioner med hemsidan.
+  </p>
+</div>
 
 
-
- 
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">© 2021 Mats Jonsson,Dank Inc</p>
@@ -94,5 +138,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="automation.js"></script>
 </body>
 </html>

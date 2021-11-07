@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="dropdown.css">
-<body>
+<link rel="stylesheet" href=stil.css>
+<body style="background-color: rgb(14, 27, 49);">
 
     <!-- Navigationsverktyg 
 <nav class="w3-bar w3-black">
@@ -31,7 +32,7 @@
       </div>
     </div>
     -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">Agila utvecklingsmetoder och html</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,7 +55,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="Projektmetodik.html">Projektmetodik</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="Tillgänglighet.html">Tillgänglighet</a>
+              <a class="dropdown-item" href="Tillganglighet.html">Tillgänglighet</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="Analys.html">Analys</a>
               <div class="dropdown-divider"></div>
@@ -68,45 +69,117 @@
                 <a class="dropdown-item" href="#Klient-server-modellen">Klient-server-modellen</a>
                 <a class="dropdown-item" href="#Internetkommunikation">Internetkommunikation</a>
                 <a class="dropdown-item" href="#Protokoll">Protokoll</a>
-                <a class="dropdown-item" href="#http / https">http / https</a>
-                <a class="dropdown-item" href="#Agil utveckling">Agil utveckling</a>
-                <a class="dropdown-item" href="#ftp / ftps">ftp / ftps</a>
+                <a class="dropdown-item" href="#httphttps">http / https</a>
+                <a class="dropdown-item" href="#ftpftps">ftp / ftps</a>
               </div>            
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="w3-container w3-center w3-content" style="max-width:600px" id="html">
+    <section class="w3-container w3-center w3-content boxi3" style="max-width:600px" id="html">
       <h2 class="w3-wide">Internet</h2>
-      <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
-    <section class="w3-container w3-center w3-content" style="max-width:600px" id="html">
-      <h2 class="w3-wide">Klient-server-modellen</h2>
-      <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
+      <p class="w3-opacity"><p>I följande stycken kommer du kunna ta del utav kommunikationen över internet och hur information delas. </p>
     </section>
-      <section class="w3-container w3-center w3-content" style="max-width:600px">
-      <h2 class="w3-wide">Internetkommunikation</h2>
-      <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
+    <br>
+    <section class="w3-container w3-center w3-content boxi3" style="max-width:600px" id="html">
+      <h1 id="Klient-server-modellen" class="w3-wide">Klient-server-modellen</h2>
+      <p class="w3-opacity"><p>Denna modell är ett nätverkssystem där servrar hanterar klienter och arbetsstationer centralt.</p>
+      <p>
+        Detta kan ses som att en klient ber om något från en server, låt säga en webbplats. Servern delar då denna information till klienten. 
+        Samspelet är då att en klient begär information och servern kan bidra med den.
+      </p>
+      <p>
+        Något att ha i åtanke är att ordet server både är den typ av program och för den dator där programmet körs. 
+        Klient-serversystemet arbetar via att vissa program körs på klientservern medan vissa andra utförs i samverkan på klientens/användarens dator.
+      </p>
+      <p>
+        Detta används dels för att avlasta persondatorn där klientprogrammet körs och för att förenkla hantering utav program som är desamma för flertalet användare. 
+        Användare skall även kunna komma åt data och program från valfria datorer samt att modellen ger en förhöjd säkerhet genom att informationen lagras på servrar som står säkert.
+      </p>
     </section>
-      <section class="w3-container w3-center w3-content" style="max-width:600px">
-      <h2 class="w3-wide">Protokoll</h2>
-      <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
+    <br>
+      <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+      <h1 id="Internetkommunikation" class="w3-wide">Internetkommunikation</h2>
+      <p class="w3-opacity"><p>Kommunikation via internet är sammanslaget som världens största interna nätverk med datorer över hela världen. 
+        Mindre nätverk byggs upp och sammankopplas till större för att sträcka sig över hela världen.</p>
+        <p>
+          Information samlat på servrar, när man själv vill ha åtkomst till ett visst material skickas en förfrågning till servern som sedan delger informationen tillbaka. 
+          Allt som är uppkopplat mot internet får en egen adress vilket underlättar vid kommunikation mellan klient och server.
+        </p>
+        <p>
+          Regelverken mellan datorer kallas protokoll och det mest grundläggande utav dessa kallas just internetprotokollet, förkortat IP. 
+          Men dessa sifferkombinationer kan vara svåra att memorera så istället för att använda sig utav IP-adresser använder man sig utav domäner för att lättare kunna memorera adresser. 
+          Domänsystemet DNS har skapats enbart för att kunna översätta IP-adresserna till namn som vi kan förstå lättare.
+        </p>
+        <p>
+          Detta skapades för att nätverk av olika typer skulle kunna kommunicera med varandra men används även idag i lokala nätverk som över internet.
+        </p>
     </section>
+    <br>
+      <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+      <h1 id="Protokoll" class="w3-wide">Protokoll</h2>
+      <p class="w3-opacity"><p>
+        Kommunikationen mellan nätverksenheter blir möjlig med hjälp utav tillämpade avtal och regler tillsammans med överenskommelser och standarder.
+        Dessa regler eller protokoll styr kommunikationen mellan avsändare och mottagare, kommunikationssätt kan definieras och kommunikationen är grundat på gemensamt språk. 
+        Även hastighet och tidpunkter är avtalat för leverans samt att kommunikationskrav tillfredsställs.
+      </p>
+      <p>
+        Protokollen beskriver de funktioner som krävs för kommunikation via nätverk men hur funktioner utförs eller appliceras beskrivs inte. 
+        Tillämpningen är självständig vilket gör att olika kommunikationsmetoder kan tillämpas självständigt. Kravet är gemensamma protokoll trots att tekniker används.
+      </p>
+      <p>
+        TCP/IP-protokollpaketet är en öppen standard som bidrar till att allmänheten fritt kan använda denna och leverantörer kan nyttja dessa protokoll på deras mjuk- eller hårdvara.
+        Kommunikationen grundas i en kommunikationsmodell som använder flera protokoll också kallat en protokollstack.
+      </p>
+      <img src="protokoll.jpg" class="internetbak";>
+      <br>
+      <br>
+      <p>
+        Dessa används för att placera protokoll för olika skikt eller plan i en kommunikationsmodell för att tillhandahålla tjänster till varandra. 
+        Protokollen tillsätts i mjukvara och den hårdvara som är installerad på varje enskild nätverksenhet. 
+        Exemplet ovan visar på hur samarbete mellan protokoll som används då en användare öppnar en webbläsare och sker efter en specifik webbsida.
+      </p>
     </section>
-    <section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">http / https</h2>
-    <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
+    <br>
     </section>
+    <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+    <h1 id="httphttps" class="w3-wide">http/https</h2>
+    <p class="w3-opacity"><p>HTTP är en förkortning utav HyperText Transfer Protocol. Denna förkortning kan delas upp i fyra beståndsdelar. 
+      Hypertext som är hyperlänkar eller bara länkar som gör en koppling mellan texter. Transfer indikerar händelseförloppet om emottagning och utskick utav information. 
+      Sist protocol som är en överenskommelse mellan enheters kommunikation.
+      Användningsområdet är i skedet då en webbläsare skall hämta data ifrån en webbserver och hur den styr flödet runt världen. 
+      Vid varje skede som HTTP används finns alltid två olika parter i form utav klient och server.
+      </p>
+      <P>
+        Enkelt kan man se kommunikationen på följande vis: <br>
+En användare anger webbadress eller klickar på en länk. <br>
+Klienten / webbläsaren skickar en http förfrågan mot HTTP-servern. <br>
+Servern behandlar förfrågan. <br>
+Efter behandling skickar servern tillbaka ett HTTP-svar till webbläsaren. <br>
+Webbläsaren mottager svaret och dess innehåll visas på skärmen. <br>
+      </P>
+      <p>
+        I dagsläget används istället HTTPS istället för HTTP, anledningen till detta är skillnaden i säkerhet. 
+        HTTPS är krypterat via SSL som är förkortningen utav Secure Sockets Layer vilket är ett säkerhetsprotokoll utvecklat utav Netscape. 
+        Krypteringen bidrar till att tredjeparter inte kan komma åt information som skickas mellan enheter. 
+        Sökmotorer så som Google har även rankat sidor med HTTPS högre en sidor med http.
+      </p>
     </section>
-    <section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">ftp / ftps</h2>
-    <p class="w3-opacity"><i>Här komemr ajg skriva lite info</i></p>
+    <br>
     </section>
-
-
-
-  
-  
+    <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+    <h1 id="ftpftps" class="w3-wide">ftp/ftps</h2>
+    <p class="w3-opacity"><p>File transfer protocol är et utav de äldsta protokollen. Användningen utav protokollet är att flytta filer mellan platser. 
+      Det negativa med ftp är dock att det helt saknar säkerhet utan skickar all information helt öppet. 
+      Man måste fortfarande verifiera sig med användarnamn och ofta lösenord som skickas helt öppet för att öppna förbindelsen.
+    </p>
+    <p>
+      Ftps lägger istället till Secure och innehåller en form utav säkerhetsmekanism. Säkerheten krypterar kommunikationen med tls (transport layer security) eller ssl ( secure socket layer). 
+      Ett problem kvarstår dock att för varje överföring behöver en ny port öppnas. Så alltså behöver en port öppnas för initiering och sedan ett flertal andra portar för varje enskild överföring. 
+      Så för att släppa igenom dessa krävs det att brandväggen behöver öppna ett flertal portar som växlar användning.
+    </p>
+    </section>
 
 <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

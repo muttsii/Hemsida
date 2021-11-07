@@ -3512,7 +3512,8 @@ textarea.form-control-lg {
 .dropend,
 .dropdown,
 .dropstart {
-  position: relative;
+  position: right;
+
 }
 
 .dropdown-toggle {
@@ -3533,7 +3534,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-menu {
-  position: absolute;
+  position: right;
   z-index: 1000;
   display: none;
   min-width: 10rem;
@@ -3541,7 +3542,7 @@ textarea.form-control-lg {
   margin: 0;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: right;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -4007,10 +4008,10 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: right;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -4068,7 +4069,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4226,6 +4227,8 @@ textarea.form-control-lg {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    position: right 100px
+    ;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
