@@ -12,7 +12,7 @@
 </head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>kontakt</title>
-<body>
+<body class="body1">
 
     <!-- Navigationsverktyg 
 <nav class="w3-bar w3-black">
@@ -47,12 +47,24 @@
             <a class="dropdown-item" href="Klienttekniker.html">Klienttekniker</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Projektmetodik.html">Projektmetodik</a>
+            <a class="dropdown-item" href="Projektmetodik.html#vattenfall"><i>Vattenfallsmetodik</i></a>
+            <a class="dropdown-item" href="Projektmetodik.html#Agil"><i>Agil utveckling</i></a>
+            <a class="dropdown-item" href="Projektmetodik.html#scrum"><i>Hur man arbetar i Scrum</i></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Tillgänglighet.html">Tillganglighet</a>
+            <a class="dropdown-item" href="Tillganglighet.html">Tillgänglighet</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Analys.html">Analys</a>
+            <a class="dropdown-item" href="Analys.html#Tidshantering"><i>Tidshantering</i></a>
+            <a class="dropdown-item" href="Analys.html#Tekniska-beslut"><i>Tekniska beslut</i></a>
+            <a class="dropdown-item" href="Analys.html#overvaganden"><i>Överväganden om affärsvärlden</i></a>
+            <a class="dropdown-item" href="Analys.html#reflektioner"><i>Egna reflektioner</i></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Internet.html">Internet</a>  
+            <a class="dropdown-item" href="Internet.html">Internet</a>
+            <a class="dropdown-item" href="Internet.html#Klient-server-modellen"><i>Klient-server-modellen</i></a>
+            <a class="dropdown-item" href="Internet.html#Internetkommunikation"><i>Internetkommunikation</i></a>
+            <a class="dropdown-item" href="Internet.html#Protokoll"><i>Protokoll</i></a>
+            <a class="dropdown-item" href="Internet.html#httphttps"><i>http / https</i></a>
+            <a class="dropdown-item" href="Internet.html#ftpftps"><i>ftp / ftps</i></a> 
           </div>
         </li>
       </ul>
@@ -60,6 +72,47 @@
   </nav>
 
 <!--kontaktformulär-->
+<div class="wrapper">
+  <div class="content">
+    <h1>KontaktFormulär</h1>
+    <p>Kontakta mig genom att fylla i dina uppgifter nedan</p>
+  </div>
+  <form action="Tack.html" onsubmit="kontakt()">
+  <div class="form">
+    <div class="top-form">
+      <div class="inner-form">
+        <label for="Förnamn">
+        <div class="label">Förnamn</div>
+        <input type="text" placeholder="Begnt" required>
+      </label>
+      </div>
+      <div class="inner-form">
+        <label for="Efternamn">
+        <div class="label">Efternamn</div>
+        <input type="text" placeholder="Begntsson" required>
+      </label>
+      </div>
+      <div class="inner-form">
+        <label for="epost">
+        <div class="label">Epost</div>
+        <input type="email" placeholder="Exempel@gmail.com" required>
+      </label>
+      </div>
+    </div>
+
+    <div class="top-form">
+      <div class="inner-form">
+        <label Meddelande:>
+        <div class="label">Meddelande</div>
+        <textarea placeholder="Hej Hej!" required></textarea>
+      </label>
+      </div>
+    </div>
+  </div>
+  <input type="submit" class="btn"  value="Skicka" >
+</form>
+</div>
+<!--
 	<div class="containerr">
 		<div class="contact-box">
 			<div class="left"></div>
@@ -93,6 +146,7 @@
               <input type="submit"  value="Skicka" >
           </div>
           </form>
+        -->
 
           <!--<h2>Inlägg</h2> -->
           <p id="message"></p>
@@ -101,7 +155,8 @@
 			</div>
 		</div>
 	</div>
-  <section class="boxi2"  style="max-width:600px">
+  
+  <section class="container"  style="max-width:600px">
     <h2 class="w3-wide">Kontakt</h2>
     <b> Mats Jonsson</b>
     <br>
@@ -109,7 +164,7 @@
     <br>
     <b>epost: mats.jonsson.syne21lin@tucsweden.se</b>
   </section>
-
+  
  <!--Footer-->
  <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -137,6 +192,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+<script src="automation.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href=stil.css>
-<body>
+
 
     <!-- Navigationsverktyg 
 <nav class="w3-bar w3-black">
@@ -19,7 +19,7 @@
   </nav>
 -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <a class="navbar-brand" href="index.html">Agila utvecklingsmetoder och html</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,34 +41,49 @@
           <a class="dropdown-item" href="Klienttekniker.html">Klienttekniker</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Projektmetodik.html">Projektmetodik</a>
+          <a class="dropdown-item" href="Projektmetodik.html#vattenfall"><i>Vattenfallsmetodik</i></a>
+          <a class="dropdown-item" href="Projektmetodik.html#Agil"><i>Agil utveckling</i></a>
+          <a class="dropdown-item" href="Projektmetodik.html#scrum"><i>Hur man arbetar i Scrum</i></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Tillganglighet.html">Tillgänglighet</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Analys.html">Analys</a>
+          <a class="dropdown-item" href="Analys.html#Tidshantering"><i>Tidshantering</i></a>
+          <a class="dropdown-item" href="Analys.html#Tekniska-beslut"><i>Tekniska beslut</i></a>
+          <a class="dropdown-item" href="Analys.html#overvaganden"><i>Överväganden om affärsvärlden</i></a>
+          <a class="dropdown-item" href="Analys.html#reflektioner"><i>Egna reflektioner</i></a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="Internet.html">Internet</a>  
+          <a class="dropdown-item" href="Internet.html">Internet</a>
+          <a class="dropdown-item" href="Internet.html#Klient-server-modellen"><i>Klient-server-modellen</i></a>
+          <a class="dropdown-item" href="Internet.html#Internetkommunikation"><i>Internetkommunikation</i></a>
+          <a class="dropdown-item" href="Internet.html#Protokoll"><i>Protokoll</i></a>
+          <a class="dropdown-item" href="Internet.html#httphttps"><i>http / https</i></a>
+          <a class="dropdown-item" href="Internet.html#ftpftps"><i>ftp / ftps</i></a> 
         </div>   
       </li>
     </ul>
   </div>
 </nav>
-<main class="header-img-klient"></main>
+
+
+
 <section class="w3-container w3-center w3-content" style="max-width:600px" id="html">
-  <h2 class="w3-wide">Klienttekniker</h2>
+  <h1 class="w3-wide">Klienttekniker</h1>
+  
   <p class="w3-opacity"><i>Nedan kan du läsa om olika klienttekniker som används vid utveckling utav hemsidor.</i></p>
 
 <!-- The grid: three columns -->
 <div class="row">
-  <div class="column" onclick="openTab('b1');" style="background:#00800082;">HTML</div>
-  <div class="column" onclick="openTab('b2');" style="background:rgba(0, 0, 255, 0.469);">CSS</div>
-  <div class="column" onclick="openTab('b3');" style="background:rgba(255, 0, 0, 0.401);">JavaScript</div>
+  <div class="column" onclick="openTab('b1');" style="background:#00800082;" href="#b1">HTML</div>
+  <div class="column" onclick="openTab('b2');" style="background:rgba(0, 0, 255, 0.469);" href="#b2">CSS</div>
+  <div class="column" onclick="openTab('b3');" style="background:rgba(255, 0, 0, 0.401);" href="#b3">JavaScript</div>
 </div>
 
 <!-- The expanding grid (hidden by default) -->
 <div id="b1" class="containerTab b1" >
   <!-- If you want the ability to close the container, add a close button -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-  <h3>HTML</h2>
+  <h1 id="b1">HTML</h1>
   <p>HyperText Markup Language eller HTML en av webbens grundstenar som tillsammans med Cascading Style Sheets och Javascript. </p>
   <p>
     HTML ger strukturen för alla hemsidor som finns på internet. Den står för hur rubriker och stycken delas upp, för att skilja på innehåll och bifoga bilder. 
@@ -87,7 +102,7 @@ Sökmotorer använder också strukturen för att söka efter relaterbara ord som
 
 <div id="b2" class="containerTab b2" >
   <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-  <h3>CSS</h2>
+  <h1  id="b2">CSS</h1>
   <p>Cascading Style Sheets är den andra grundstenen till en webbplats. Via CSS sköter man designval utav en hemsida och kan ses som ansiktet utåt. 
     Med hjälp utav CSS man ändra bland annat ändra typsnitt, tillsätta färger och former samt infoga animeringar.</p>
     <p>
@@ -105,7 +120,7 @@ Sökmotorer använder också strukturen för att söka efter relaterbara ord som
 
 <div id="b3" class="containerTab b3" >
   <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-  <h3>JavaScript</h2>
+  <h1 id="b3">JavaScript</h1>
   <p>
     Javascript bidrar till funktionaliteten på hemsidor. Enklare animationer kan man utföra med hjälp utav CSS men oftast används javascript när något händer på en hemsida. 
     Exempel på detta kan vara när man skall fylla i formulär eller klicka på knappar som ger gensvar. Svaren kan vara felmeddelanden eller att någonting rör sig på hemsidan.
@@ -119,6 +134,7 @@ Sökmotorer använder också strukturen för att söka efter relaterbara ord som
   </p>
 </div>
 
+</main>
 
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

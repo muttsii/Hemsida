@@ -18,7 +18,7 @@
     <a href="Kontakt.html" class="w3-button w3-bar-item">Kontakt</a>
   </nav>
   -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary navbar fixed-top">
     <a class="navbar-brand" href="index.html">Agila utvecklingsmetoder och html</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,22 +40,26 @@
             <a class="dropdown-item" href="Klienttekniker.html">Klienttekniker</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Projektmetodik.html">Projektmetodik</a>
+            <a class="dropdown-item" href="Projektmetodik.html#vattenfall"><i>Vattenfallsmetodik</i></a>
+            <a class="dropdown-item" href="Projektmetodik.html#Agil"><i>Agil utveckling</i></a>
+            <a class="dropdown-item" href="Projektmetodik.html#scrum"><i>Hur man arbetar i Scrum</i></a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Tillganglighet.html">Tillgänglighet</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Analys.html">Analys</a>
+            <a class="dropdown-item" href="Analys.html#Tidshantering"><i>Tidshantering</i></a>
+            <a class="dropdown-item" href="Analys.html#Tekniska-beslut"><i>Tekniska beslut</i></a>
+            <a class="dropdown-item" href="Analys.html#overvaganden"><i>Överväganden om affärsvärlden</i></a>
+            <a class="dropdown-item" href="Analys.html#reflektioner"><i>Egna reflektioner</i></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Internet.html">Internet</a>  
+            <a class="dropdown-item" href="Internet.html">Internet</a>
+            <a class="dropdown-item" href="Internet.html#Klient-server-modellen"><i>Klient-server-modellen</i></a>
+            <a class="dropdown-item" href="Internet.html#Internetkommunikation"><i>Internetkommunikation</i></a>
+            <a class="dropdown-item" href="Internet.html#Protokoll"><i>Protokoll</i></a>
+            <a class="dropdown-item" href="Internet.html#httphttps"><i>http / https</i></a>
+            <a class="dropdown-item" href="Internet.html#ftpftps"><i>ftp / ftps</i></a> 
           </div>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="Internet.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projektmetodik
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#vattenfall">Vattenfallsmetodik</a>
-              <a class="dropdown-item" href="#Agil">Agil utveckling</a>
-              <a class="dropdown-item" href="#scrum">Hur man arbetar i Scrum</a>
-            </div> 
+          <li class="nav-item dropdown"> 
         </li>
       </ul>
     </div>
@@ -70,13 +74,15 @@
     <p>projektmetodik är kan ses som ett system med flertalet metoder, förfaranden, tekniker och regler som används vid arbeten inom olika discipliner.</p>
     <p>De mest använda metoderna har tagits fram genom år utav erfarenhet men med grunder som gemene man kan lära sig snabbt men med utrymme för utveckling.</p>
   </section>
-  <section class="w3-container w3-center w3-content boxi2" style="max-width:600px">
-    <h3 id="vattenfall" class="w3-wide">Vattenfallsmetodik</h3>
+  <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+    <h2 id="vattenfall" class="w3-wide">Vattenfallsmetodik</h3>
     <p>Denna modell är en utav de äldsta och även vanligaste modellen som används som projektledning. Metoden härstammar ifrån bygg- och tillverkningsindustrin med fokus på att sekventiellt utföra ett projekts olika faser. 
       Beroende på vilken slags projektledning som finns tillgänglig och vilket arbetssätt som föredras kan man gynnas utav denna metod. </p>
       Metoden är uppbyggd i 5 steg som kan variera:
       </p>
-    <img src="Vattenfallsmodellen.png"m width="500" height="400">
+      <div>
+    <img src="Vattenfallsmodellen.png" class="internetbak" >
+  </div>
     <p class="w3-opacity"><p>Modellen är traditionell och är en enkelriktad utvecklingsprocess. Innebörden utav detta är att man har en plan för hur projektet skall genomföras och följer endast den riktningen. 
       Så snart en fas är avklarad så går man inte tillbaka utan påbörjar nästa och försöker där lösa problemet istället för att gå tillbaka.</p>
       <p>
@@ -89,8 +95,8 @@
         Ifall dessutom man märker att något inte blivit rätt i tidigare faser kan man inte längre åtgärda dessa då de är låsta och avslutade.
       </p>
   </section>
-  <section class="w3-container w3-center w3-content boxi2" style="max-width:600px">
-    <h3 id="Agil" class="w3-wide">Agil utveckling</h3>
+  <section class="w3-container w3-center w3-content boxi3" style="max-width:600px">
+    <h2 id="Agil" class="w3-wide">Agil utveckling</h3>
     <p class="w3-opacity">Den agila utvecklingsmetoden tar hänsyn till att förändringar kan tillkomma under en lång utvecklingsprocess. Arbetssättet bygger på att man innan inte vet exakt hur en mjukvara skall utvecklas.
        Detta är något som uppmärksammas under projektets gång när ny och aktuell kunskap tillkommer. 
       Anpassningar ger möjligheter till ett mer lyckosamt resultat.</p>
@@ -110,9 +116,39 @@
       Arbetet levererar produkten i bitar under faser vilket ger en möjlighet att snabbt få en överblick ifall man behöver korrigera vid missförstånd eller fel. Tillvägagångsättet kräver disciplin, en tät kommunikation och transparens mellan kunden och leverantören utav produkten.
     </p>
     <i>Resultatet är en samarbetsform som skapar en gemensam framgång.</i>
+   <br>
+    <p>
+      Inom agil utveckling finns dettolv olika principer:
+    </p>
+    <p>
+      1: Högsta prioritet att tillfredsställa kunden med en kontinuerlig leverans och betydelsefull programvara.
+<br>
+      2: Vara mottagliga till ändrade krav under utvecklingen.
+<br>
+      3: Ofta leverera en programvara som fungerar ofta.
+<br>
+      4: Utvecklare skall jobba tillsammans dagligen under ett projekts gång.
+<br>
+      5: Utveckla projekt kring personer som är motiverade och ge dem det stöd och arbetsmiljö som krävs för att få jobbet gjort.
+<br>
+      6: Hålla kommunikation ansikte mot ansikte inom utvecklingsteamet.
+<br>
+      7: programvara som fungerar är måttet på framsteg.
+<br>
+      8: Den agila metoden främjar uthållighet för att kunna utveckla under en obegränsad tid.
+<br>
+      9: Kontinuerlig uppmärksammad teknik och design främjar anpassningsförmågan.
+<br>
+      10: jobba smart och enkelt, maximera jobb sim inte görs.
+<br>
+      11: Den bästa designen, arkitekturen och kraven ökar med självständiga team.
+<br>
+      12: Reflektioner i teamet om effektivisering och utför ändringar efter det.
+
+    </p>
   </section>  
-  <section class="w3-containers w3-center w3-content boxi2" style="max-width:600px">
-    <h3 id="scrum" class="w3-wide">Hur man arbetar i Scrum</h3>
+  <section class="w3-containers w3-center w3-content boxi3" style="max-width:600px">
+    <h2 id="scrum" class="w3-wide">Scrum</h3>
     <p class="w3-opacity">En produktägare kommer med förändringar som en produkt skall genomgå inför uppdateringar eller nya funktioner. Detta är olika önskemål och krav som sammanställts för att förändra produkten, kan vara allt ifrån tex. buggar eller nya funktioner. 
       För att nå målen delas uppdraget om förändringar ner i mindre delar som sedan prioriteras utav produktägaren och vad som skall göras i vilken ordning bestäms. Resultatet är en ”att göra lista” som ständigt förändras utifrån kundens behov. När det är dags för en ny sprint fryser produktägaren de viktigaste punkterna och kallar till möte med scrum-teamet.
       Scrum-teamet har sedan 30 kalenderdagar på sig att utföra uppgiften som tilldelats. Den första dagen består av att skapa en ”sprint backlog” där uppgifterna och tidsåtgången bestäms.
@@ -128,7 +164,7 @@
       Sprinten avslutas med en demonstration utav en fungerande programvara och utvärderas sedan för att kunna påbörja diskussioner angående nästkommande sprint.
       <br>
       <br>
-      <h6>Vilka roller teammedlemmarna i ett SCRUM projekt har</h6>
+      <h3>Vilka roller teammedlemmarna i ett SCRUM projekt har</h6>
       <br>
       Scrum-teamet i sig består utav 5-9 personer som själv bestämmer hur ett arbete skall fördelas. Alla i gruppen skall kunna byta roller med varandra och inga fast roller är bestämda. Att specialister förekommer inom vissa områden är däremot inte förhindrat.
       Produktägaren bestämmer affärsmässigt vad som skall genomföras, ger verktyg till scum-teamet i form av backlog och prioriterar lönsamheter i uppdragen. Dessa dokument och handlingar är synliga för hela organisationen så organisationen vet vad som kommer i nya realeeser. 
@@ -136,9 +172,9 @@
       Scrumästaren är som en handledare till scrum-teamet och underlättar och följer upp arbetet i form utav dagliga träffar (daily scrums).  Ser även till att utvecklarna störs så lite som möjligt. Försöker bidra med så bra förutsättningar som möjligt och utvärderar varje ”sprint” för att at lärdom.
       <br>
       <br>
-      <h6>
+      <h3>
         Fördelarna att jobba med SCRUM mot traditionella projektmetodiker.
-      </h6>
+      </h3>
       <br>
       <p>
         SCRUM ger möjlighet att snabbt ge respons på vad marknaden har för behov eller önskemål med en reducerad mängd väntetid och tidseffektivare arbete. Arbetssättet skall även minska på personalens stress och öka produktiviteten. 
